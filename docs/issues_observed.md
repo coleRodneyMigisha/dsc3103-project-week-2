@@ -1,0 +1,5 @@
+- everything, including the prices and quantities, is a string
+- certain total prices display error instead of the calculated total price
+- suspicious transactions with unknown payment methods and locations
+- considering total spent can be calculated from price per unit and quantity, those 3 columns should have the same number of entries but they do not
+- it's suspicious how many nulls are in the payment method and location
