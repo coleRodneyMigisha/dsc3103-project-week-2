@@ -29,4 +29,6 @@ def rule_missing_market(df):
     return missing_markets
 
 def rule_known_commodity(df):
-    pass
+    wrong_format = df[df['commodity'].notna() & (df['commodity']!=df['commodity'].str.strip().str.capitalize())].copy()
+    wrong_format["reason"] = "Wrong commodity"
+    return wrong_format
