@@ -6,3 +6,4 @@ data_path = 'data/processed/prices_clean.parquet'
 
 
 def clean_data(path=raw_path):
+    pass
