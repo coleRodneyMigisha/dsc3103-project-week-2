@@ -1,4 +1,4 @@
-from urllib import response
+from pathlib import Path
 
 import pandas as pd
 import requests
@@ -18,7 +18,7 @@ def get_mkt_rainfall(mkt_name, latitude, longitude, start_date=RAINFALL_START_DA
         "longitude": longitude,
         "start_date": start_date,
         "end_date": end_date,
-        "time-zone": "auto",
+        "timezone": "auto",
         "daily": "precipitation_sum"
     }
 
@@ -37,5 +37,28 @@ def get_mkt_rainfall(mkt_name, latitude, longitude, start_date=RAINFALL_START_DA
 
 #write function to get rain information for all markets
 def get_all_mkts(markets):
-    #for rainfall, mkt_name is key, latitude is value[0], longitude is value[1]
-    pass
+    all_market_data = []
+
+    for mkt_name, coordinates in markets.items():
+        latitude, longitude = coordinates
+
+        print(f"Fetching data for {mkt_name}...")
+
+        market_data = get_mkt_rainfall(mkt_name, latitude, longitude)
+        all_market_data.append(market_data)
+
+    if not all_market_data:
+        raise ValueError("No market data!")
+
+    rainfall_data = pd.concat(all_market_data, ignore_index=True)
+    output_path = Path(SOURCE_B_RAW_PATH)
+    rainfall_data.to_csv(output_path, index=False)
+    print(f"Done! Rainfall data saved to {output_path}")
+
+    return rainfall_data
+
+
+if __name__ == "__main__":
+    rain_df = get_all_mkts(MARKET_COORDS)
+    print(rain_df.head())
+    print(rain_df.shape)
