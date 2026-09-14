@@ -18,7 +18,7 @@ def clean_data(path=raw_path):
     mssng_mrkt = rules.rule_missing_market(df)
     wrng_cmmdt = rules.rule_known_commodity(df)
 
-    reject_index = (neg_p.index.union(dup_id.index).union(dup_rows.index).union(invali_dates.index))
+    reject_index = (neg_p.index.union(dup_id.index).union(dup_rows.index).union(invali_dates.index).union(mssng_mrkt.index))
     for index in reject_index:
         reasons = []
         if index in neg_p.index:
@@ -29,6 +29,8 @@ def clean_data(path=raw_path):
             reasons.append("Duplicate row")
         if index in invali_dates.index:
             reasons.append("Invalid date")
+        if index in mssng_mrkt.index:
+            reasons.append("Missing market")
         decisions.append({
             'index': index,
             'action': "REJECT",
@@ -44,15 +46,6 @@ def clean_data(path=raw_path):
                 'reason': "Commodity normalize"
             })
     clean_prices['commodity'] = (clean_prices['commodity'].str.strip().str.capitalize())
-
-    for index in mssng_mrkt.index:
-        if index not in reject_index:
-            decisions.append({
-                'index': index,
-                'action': "IMPUTE",
-                'reason': "Market market to Kampala"
-            })
-    clean_prices['market'] = clean_prices['market'].fillna('Kampala')
 
     decision_log = pd.DataFrame(decisions)
     clean_prices.to_parquet(data_path, index=False)

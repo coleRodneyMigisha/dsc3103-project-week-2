@@ -32,3 +32,8 @@ def rule_known_commodity(df):
     wrong_format = df[df['commodity'].notna() & (df['commodity']!=df['commodity'].str.strip().str.capitalize())].copy()
     wrong_format["reason"] = "Wrong commodity"
     return wrong_format
+
+def rule_negative_rain(df):
+    neg_rain = df[df['rainfall'] < 0].copy()
+    neg_rain["reason"] = "Negative price"
+    return neg_rain

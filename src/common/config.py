@@ -5,7 +5,7 @@ MARKET_COORDS = {
     "Mukono": (0.3533, 32.7553),
     "Bwaise": (0.3500, 32.5611),
     "Nakasero": (0.3233, 32.5789),
-    "Kansanga": (0.2872, 32.6078),
+    "Kansanga": (0.2872, 32.6078)
 }
 
 RAINFALL_START_DATE = "2020-01-01"

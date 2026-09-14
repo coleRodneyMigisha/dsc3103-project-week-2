@@ -2,6 +2,8 @@ from pathlib import Path
 
 import pandas as pd
 import requests
+import time
+import os
 
 from src.common.config import (
     SOURCE_B_RAW_PATH,
@@ -22,7 +24,7 @@ def get_mkt_rainfall(mkt_name, latitude, longitude, start_date=RAINFALL_START_DA
         "daily": "precipitation_sum"
     }
 
-    response = requests.get(RAINFALL_URL, params=params, timeout=10)
+    response = requests.get(RAINFALL_URL, params=params, timeout=60)
     if response.status_code != 200:
         raise RuntimeError(
             f"Failed to get data for {mkt_name}: Status  {response.status_code}"
@@ -36,7 +38,7 @@ def get_mkt_rainfall(mkt_name, latitude, longitude, start_date=RAINFALL_START_DA
         })
 
 #write function to get rain information for all markets
-def get_all_mkts(markets):
+def get_all_mkts(markets=MARKET_COORDS):
     all_market_data = []
 
     for mkt_name, coordinates in markets.items():
@@ -46,19 +48,19 @@ def get_all_mkts(markets):
 
         market_data = get_mkt_rainfall(mkt_name, latitude, longitude)
         all_market_data.append(market_data)
+        time.sleep(5)
 
     if not all_market_data:
         raise ValueError("No market data!")
 
-    rainfall_data = pd.concat(all_market_data, ignore_index=True)
-    output_path = Path(SOURCE_B_RAW_PATH)
-    rainfall_data.to_csv(output_path, index=False)
-    print(f"Done! Rainfall data saved to {output_path}")
+    rain_data = pd.concat(all_market_data, ignore_index=True)
 
-    return rainfall_data
+    return rain_data
 
+def ingest_source_b(path=SOURCE_B_RAW_PATH):
+    if os.path.exists(path):
+        return pd.read_csv(path)
 
-if __name__ == "__main__":
-    rain_df = get_all_mkts(MARKET_COORDS)
-    print(rain_df.head())
-    print(rain_df.shape)
+    df_b = get_all_mkts()
+    df_b.csv(path, index=False)
+    return df_b
