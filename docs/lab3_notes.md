@@ -1,0 +1,11 @@
+- I choose ELT
+- This is because we created both datasets, and it's important that I am able to store the raw version before I can do any transformation
+- This also ensures that we maintain consistent results
+- I chose overwrite-based idempotency.
+- Each run recomputes the full result from the raw inputs. 
+- The previous output is replaced. 
+- Running twice does not duplicate rows.
+- run test_pipeline.py using command 'python3 -m pytest -q'
+- Tested two functions; positive price rule and merge... both passed
+- In source b, rainfall column was renamed to precipitation, clearly stated in log, this helps us keep the pipeline consistent, hence idempotency
+- Evidence logs in 'docs/evidence/schema_change_failure.log' and 'docs/evidence/schema_change_corrected.log'

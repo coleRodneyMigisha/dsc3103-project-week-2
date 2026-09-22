@@ -3,6 +3,7 @@ from src.ingest.source_a import ingest_source_a
 from src.ingest.source_b import (get_all_mkts, get_mkt_rainfall, ingest_source_b)
 from src.transform.clean import clean_data
 from src.transform.merge import merge_data
+from src.common.config import SOURCE_A_RAW_PATH
 
 import pandas as pd
 

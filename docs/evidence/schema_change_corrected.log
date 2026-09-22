@@ -1,0 +1,14 @@
+     id        date    market commodity  price
+1  fd-1  2021-03-08    Mukono     Maize   8100
+3  fd-3  2020-06-12  Kansanga     Beans   7500
+4  fd-4  2020-04-09  Nakasero     Beans   1900
+5  fd-5  2021-01-22    Mukono      Fish  21000
+6  fd-6  2021-12-22    Mukono     Maize   9900
+Original rows: 10756
+Cleaned rows: 7322
+Missing marks before: 2072
+Missing marks after: 0
+Saved to: data/processed/prices_clean.parquet
+Clean rows: 7322
+Merged rows: 7322
+Saved output to data/processed/prices_with_rain.parquet

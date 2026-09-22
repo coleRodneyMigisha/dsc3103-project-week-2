@@ -1,0 +1,2 @@
+Pipeline rejected input: Source B schema error: missing columns ['rainfall']. 
+Expected columns: ['date', 'market', 'rainfall']

@@ -1,6 +1,8 @@
 SOURCE_A_RAW_PATH = "data/raw/prices.csv"
 SOURCE_B_RAW_PATH = "data/raw/rain.csv"
 
+OUTPUT_PATH = "data/processed/prices_with_rain.parquet"
+
 MARKET_COORDS = {
     "Mukono": (0.3533, 32.7553),
     "Bwaise": (0.3500, 32.5611),
