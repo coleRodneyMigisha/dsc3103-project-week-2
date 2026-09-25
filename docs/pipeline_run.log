@@ -1,0 +1,142 @@
+2026-09-25 12:16:24 | Pipeline | INFO | === Pipeline run started ===
+2026-09-25 12:31:46 | Pipeline | INFO | === Pipeline run started ===
+2026-09-25 12:31:46 | Pipeline | INFO | 
+Stage 1: Ingesting source A
+2026-09-25 12:31:46 | Pipeline | INFO | Stage 1.1: Source A ingested, Row count: 10756
+2026-09-25 12:32:20 | Pipeline | INFO | === Pipeline run started === 
+
+2026-09-25 12:32:20 | Pipeline | INFO | Stage 1: Ingesting source A
+2026-09-25 12:32:20 | Pipeline | INFO | Stage 1.1: Source A ingested, Row count: 10756
+2026-09-25 12:37:45 | Pipeline | INFO | === Pipeline run started === 
+
+2026-09-25 12:37:45 | Pipeline | INFO | Stage 1.0: Ingesting source A
+2026-09-25 12:37:45 | Pipeline | INFO | Stage 1.1: Source A ingested, Row count: 10756 
+
+2026-09-25 12:37:45 | Pipeline | INFO | Stage 2.0: Ingesting source B
+2026-09-25 12:37:45 | Pipeline | INFO | Stage 2.1: Source B ingested, Row count: 4384 
+
+2026-09-25 12:45:44 | Pipeline | INFO | === Pipeline run started === 
+
+2026-09-25 12:45:44 | Pipeline | INFO | Stage 1.0: Ingesting source A
+2026-09-25 12:45:44 | Pipeline | INFO | Stage 1.1: Source A ingested, Row count: 10756 
+
+2026-09-25 12:45:44 | Pipeline | INFO | Stage 2.0: Ingesting source B
+2026-09-25 12:45:44 | Pipeline | INFO | Stage 2.1: Source B ingested, Row count: 4384 
+
+2026-09-25 12:45:44 | Pipeline | INFO | Stage 3.0: Cleaning source A
+2026-09-25 12:45:45 | Pipeline | INFO | Stage 3.1: Source A cleaned rows in: 7322 
+Decisions: 8559 
+
+2026-09-25 12:46:21 | Pipeline | INFO | === Pipeline run started === 
+
+2026-09-25 12:46:21 | Pipeline | INFO | Stage 1.0: Ingesting source A
+2026-09-25 12:46:21 | Pipeline | INFO | Stage 1.1: Source A ingested, Row count: 10756 
+
+2026-09-25 12:46:21 | Pipeline | INFO | Stage 2.0: Ingesting source B
+2026-09-25 12:46:21 | Pipeline | INFO | Stage 2.1: Source B ingested, Row count: 4384 
+
+2026-09-25 12:46:21 | Pipeline | INFO | Stage 3.0: Cleaning source A 
+
+2026-09-25 12:46:21 | Pipeline | INFO | Stage 3.1: Source A cleaned rows in: 7322 
+Decisions: 8559 
+
+2026-09-25 12:48:13 | Pipeline | INFO | === Pipeline run started === 
+
+2026-09-25 12:48:13 | Pipeline | INFO | Stage 1.0: Ingesting source A
+2026-09-25 12:48:13 | Pipeline | INFO | Stage 1.1: Source A ingested, Row count: 10756 
+
+2026-09-25 12:48:13 | Pipeline | INFO | Stage 2.0: Ingesting source B
+2026-09-25 12:48:13 | Pipeline | INFO | Stage 2.1: Source B ingested, Row count: 4384 
+
+2026-09-25 12:48:13 | Pipeline | INFO | Stage 3.0: Cleaning source A
+2026-09-25 12:48:13 | Pipeline | INFO | Stage 3.1: Source A cleaned, new Row count: 7322 
+
+2026-09-25 12:58:20 | Pipeline | INFO | === Pipeline run started === 
+
+2026-09-25 12:58:20 | Pipeline | INFO | Stage 1.0: Ingesting source A
+2026-09-25 12:58:20 | Pipeline | INFO | Stage 1.1: Source A ingested, Row count: 10756 
+
+2026-09-25 12:58:20 | Pipeline | INFO | Stage 2.0: Ingesting source B
+2026-09-25 12:58:20 | Pipeline | INFO | Stage 2.1: Source B ingested, Row count: 4384 
+
+2026-09-25 12:58:20 | Pipeline | INFO | Stage 3.0: Cleaning source A
+2026-09-25 12:58:20 | Pipeline | INFO | Stage 3.1: Source A cleaned 
+Rows in: 10756 
+Rows out: 7322 
+
+2026-09-25 12:58:20 | Pipeline | INFO | Stage 4.0: Merging Price (source a) and Rainfall (source b) 
+2026-09-25 12:58:20 | Pipeline | INFO | Stage 4.1: Merge complete 
+Rows in:   Source A -> 7322 
+  Source B -> 4384 
+Rows out: Merged -> 7322 
+
+2026-09-25 12:58:34 | Pipeline | INFO | === Pipeline run started === 
+
+2026-09-25 12:58:34 | Pipeline | INFO | Stage 1.0: Ingesting source A
+2026-09-25 12:58:34 | Pipeline | INFO | Stage 1.1: Source A ingested, Row count: 10756 
+
+2026-09-25 12:58:34 | Pipeline | INFO | Stage 2.0: Ingesting source B
+2026-09-25 12:58:34 | Pipeline | INFO | Stage 2.1: Source B ingested, Row count: 4384 
+
+2026-09-25 12:58:34 | Pipeline | INFO | Stage 3.0: Cleaning source A
+2026-09-25 12:58:35 | Pipeline | INFO | Stage 3.1: Source A cleaned 
+Rows in: 10756 
+Rows out: 7322 
+
+2026-09-25 12:58:35 | Pipeline | INFO | Stage 4.0: Merging Price (source a) and Rainfall (source b) 
+2026-09-25 12:58:35 | Pipeline | INFO | Stage 4.1: Merge complete 
+Rows in: 
+  Source A -> 7322 
+  Source B -> 4384 
+Rows out: Merged -> 7322 
+
+2026-09-25 13:11:14 | Pipeline | INFO | === Pipeline run started === 
+
+2026-09-25 13:11:14 | Pipeline | INFO | Stage 1.0: Ingesting source A
+2026-09-25 13:11:14 | Pipeline | INFO | Stage 1.1: Source A ingested, Row count: 10756 
+
+2026-09-25 13:11:14 | Pipeline | INFO | Stage 2.0: Ingesting source B
+2026-09-25 13:11:14 | Pipeline | INFO | Stage 2.1: Source B ingested, Row count: 4384 
+
+2026-09-25 13:11:14 | Pipeline | INFO | Stage 3.0: Cleaning source A
+2026-09-25 13:11:14 | Pipeline | INFO | Stage 3.1: Source A cleaned 
+Rows in: 10756 
+Rows out: 7322 
+
+2026-09-25 13:11:14 | Pipeline | INFO | Stage 4.0: Merging Price (source a) and Rainfall (source b) 
+2026-09-25 13:11:15 | Pipeline | INFO | Stage 4.1: Merge complete 
+Rows in: 
+  Source A -> 7322 
+  Source B -> 4384 
+Rows out: Merged -> 7322 
+
+2026-09-25 13:11:15 | Pipeline | INFO | Stage 5.0: Saving merged file 
+
+2026-09-25 13:11:15 | Pipeline | INFO | Stage 5.1: Saving 7322 rows (merged file) to data/processed/prices_with_rain.parquet 
+
+2026-09-25 13:11:15 | Pipeline | INFO | === PIPELINE RUN COMPLETED SUCCESSFULLY! ===
+2026-09-25 13:11:38 | Pipeline | INFO | === Pipeline run started === 
+
+2026-09-25 13:11:38 | Pipeline | INFO | Stage 1.0: Ingesting source A
+2026-09-25 13:11:38 | Pipeline | INFO | Stage 1.1: Source A ingested, Row count: 10756 
+
+2026-09-25 13:11:38 | Pipeline | INFO | Stage 2.0: Ingesting source B
+2026-09-25 13:11:38 | Pipeline | INFO | Stage 2.1: Source B ingested, Row count: 4384 
+
+2026-09-25 13:11:38 | Pipeline | INFO | Stage 3.0: Cleaning source A
+2026-09-25 13:11:38 | Pipeline | INFO | Stage 3.1: Source A cleaned 
+Rows in: 10756 
+Rows out: 7322 
+
+2026-09-25 13:11:38 | Pipeline | INFO | Stage 4.0: Merging Price (source a) and Rainfall (source b) 
+2026-09-25 13:11:38 | Pipeline | INFO | Stage 4.1: Merge complete 
+Rows in: 
+  Source A -> 7322 
+  Source B -> 4384 
+Rows out: Merged -> 7322 
+
+2026-09-25 13:11:38 | Pipeline | INFO | Stage 5.0: Saving merged file 
+
+2026-09-25 13:11:38 | Pipeline | INFO | Stage 5.1: Saving 7322 rows (merged file) to 'data/processed/prices_with_rain.parquet' 
+
+2026-09-25 13:11:38 | Pipeline | INFO | === PIPELINE RUN COMPLETED SUCCESSFULLY! ===

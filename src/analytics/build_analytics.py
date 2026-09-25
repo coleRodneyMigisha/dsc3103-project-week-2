@@ -48,7 +48,7 @@ def maize_query():
         ORDER BY mean_price DESC
     """).df()
     elapsed = time.perf_counter() - t0
-    print("=== Step 1: Maize query ===")
+    print("=== Step 1: Maize query (Flat Parquet) ===")
     print(result)
     print(f"Time: {elapsed:.4f}s | File size: {os.path.getsize(RAW_JOINED_PATH)} bytes")
     return elapsed
@@ -63,7 +63,7 @@ def beans_query():
         ORDER BY mean_price DESC
     """).df()
     elapsed = time.perf_counter() - t0
-    print("\n\n=== Step 2: Beans query ===")
+    print("\n\n=== Step 2: Beans query (Flat Parquet) ===")
     print(result)
     print(f"Time: {elapsed:.4f}s | File size: {os.path.getsize(RAW_JOINED_PATH)} bytes")
     return elapsed
