@@ -1,0 +1,7 @@
+pandas==3.0.5
+scikit-learn==1.9.1
+joblib==1.6.0
+fastapi==0.136.3
+pydantic==2.13.5
+uvicorn==0.54.0
+pyarrow==25.0.1
