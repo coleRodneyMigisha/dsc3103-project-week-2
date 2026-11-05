@@ -1,0 +1,12 @@
+{"event_id": "e3", "market": "Kansanga", "commodity": "Maize", "price": 1475.0, "event_time": 1762379979.89, "reason": "Event arrived after watermark"}
+{"event_id": "e6", "market": "Unknown", "commodity": "Maize", "price": 1935.0, "event_time": 1762379965.568, "reason": "Event arrived after watermark"}
+{"event_id": "e41", "market": "Bwaise", "commodity": "Beans", "price": 1612.0, "event_time": 1762379966.917, "reason": "Event arrived after watermark"}
+{"event_id": "e44", "market": "Kansanga", "commodity": "Beans", "price": 3274.0, "event_time": 1762379971.609, "reason": "Event arrived after watermark"}
+{"event_id": "e83", "market": "Nakasero", "commodity": "Beans", "price": 2559.0, "event_time": 1762379989.791, "reason": "Event arrived after watermark"}
+{"event_id": "e87", "market": "Nakasero", "commodity": "Beans", "price": 4027.0, "event_time": 1762379975.291, "reason": "Event arrived after watermark"}
+{"event_id": "e168", "market": "Nakasero", "commodity": "Beans", "price": 2612.0, "event_time": 1762379991.947, "reason": "Window already finalised"}
+{"event_id": "e189", "market": "Kansanga", "commodity": "Maize", "price": 1129.0, "event_time": 1762379986.316, "reason": "Window already finalised"}
+{"event_id": "e211", "market": "Nakasero", "commodity": "Beans", "price": 4845.0, "event_time": 1762379987.352, "reason": "Window already finalised"}
+{"event_id": "e233", "market": "Kansanga", "commodity": "Beans", "price": 2180.0, "event_time": 1762379989.547, "reason": "Window already finalised"}
+{"event_id": "e251", "market": "Kansanga", "commodity": "Beans", "price": 2160.0, "event_time": 1762379991.18, "reason": "Window already finalised"}
+{"event_id": "e278", "market": "Nakasero", "commodity": "Beans", "price": 2193.0, "event_time": 1762380003.706, "reason": "Window already finalised"}

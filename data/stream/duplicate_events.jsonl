@@ -1,0 +1,11 @@
+{"event_id": "e0", "market": "mukono", "commodity": "Maize", "price": 4898.0, "event_time": 1762380000.0}
+{"event_id": "e21", "market": "Unknown", "commodity": "Beans", "price": 2966.0, "event_time": 1762380002.487}
+{"event_id": "e32", "market": "Nakasero", "commodity": "Beans", "price": 4417.0, "event_time": 1762380004.09}
+{"event_id": "e40", "market": "Nakasero", "commodity": "Beans", "price": 1720.0, "event_time": 1762380005.046}
+{"event_id": "e119", "market": "Nakasero", "commodity": "Beans", "price": 1054.0, "event_time": 1762380014.516}
+{"event_id": "e138", "market": "mukono", "commodity": "Maize", "price": 2306.0, "event_time": 1762380016.809}
+{"event_id": "e162", "market": "Kansanga", "commodity": "Beans", "price": 3536.0, "event_time": 1762380019.796}
+{"event_id": "e163", "market": "Kansanga", "commodity": "Maize", "price": 3826.0, "event_time": 1762380019.905}
+{"event_id": "e206", "market": "Bwaise", "commodity": "Beans", "price": 1717.0, "event_time": 1762380025.221}
+{"event_id": "e235", "market": "Unknown", "commodity": "Beans", "price": 4575.0, "event_time": 1762380028.882}
+{"event_id": "e294", "market": "Kansanga", "commodity": "Beans", "price": 1920.0, "event_time": 1762380036.316}
