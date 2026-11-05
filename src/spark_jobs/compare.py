@@ -66,6 +66,7 @@ def spark_cache_job(use_cache):
     t0 = time.perf_counter()
     df.groupBy("market").agg(F.avg("price")).collect()     # action 1
     # TODO: add a SECOND action on df, e.g. the average rainfall per market
+    df.groupBy("market").agg(F.avg("rainfall_mm")).collect()  # action 2
     elapsed = time.perf_counter() - t0
 
     print(f"use_cache={use_cache}: {elapsed:.3f}s")
@@ -73,4 +74,7 @@ def spark_cache_job(use_cache):
     return elapsed
 
 if __name__ == "__main__":
+    duckdb_job()
+    spark_job()
+    spark_cache_job(False)
     spark_cache_job(True)
